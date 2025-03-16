@@ -17,7 +17,7 @@ export function Profile() {
   const [passwordOld, setPasswordOld] = useState();
   const [passwordNew, setPasswordNew] = useState();
 
-  const avatarUrl = user.avatar ? `${api.defaults.baseURL}files/${user.avatar}` : avatarDefault;
+  const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarDefault;
   
   // Estado que exige o avatar
   const [avatar, setAvatar] = useState(avatarUrl); 
